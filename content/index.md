@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to My Little Santuary on the Internet!
 ---
 
 This is a blank Quartz installation.
