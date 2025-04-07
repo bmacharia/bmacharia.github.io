@@ -1,10 +1,10 @@
-# Abecedarium
+# Adwaita
 
-[Abecedarium](https://notes.zacklenza.com)
+[Adwaita](https://github.com/birneee)
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/abecedarium/)
+[Open live preview](https://quartz-themes.github.io/adwaita/)
 
 ## Usage
 
@@ -12,7 +12,7 @@
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- abecedarium
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- adwaita
 ```
 
 ### Manual install
@@ -20,7 +20,7 @@
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh abecedarium
+./action.sh adwaita
 ```
 
 ### Install script (Advanced)
@@ -28,5 +28,5 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 After installing:
 
 ```bash
-npm run theme abecedarium
+npm run theme adwaita
 ```
