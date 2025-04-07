@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to My Blog
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+This is my Personal Blog there are many like them but this one is Mine!
