@@ -1,4 +1,4 @@
-/* quartz themes */
+/* quartz themes dark-only */
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
@@ -6,9 +6,8 @@
 @use "sass:color";
 
 @use "dark";
-@use "light";
 @use "extras";
-@use "extras/fonts/source-code-pro.scss";
+@use "extras/hide-toggle.scss";
 
 /* Callouts */
 $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
@@ -329,71 +328,6 @@ $callout-types: "note", "abstract", "info", "todo", "tip", "success", "question"
   --icon-color-focus: var(--interactive-accent-hover);
   --icon-stroke: var(--icon-l-stroke-width);
 
-  --bg0-dark: #1d2021;
-  --bg1-dark: #3c3836;
-  --bg-dark: #282828;
-  --bg2-dark: #504945;
-  --bg3-dark: #665c54;
-  --bg4-dark: #7c6f64;
-  --bg5-dark: #928374;
-  --bg_visual: #503946;
-  --bg_red: #cc241d;
-  --bg_green: #98971a;
-  --bg_blue: #458588;
-  --bg_yellow: #d79921;
-  --shadow: #00000070;
-  --fg-dark: #ebdbb2;
-  --grey0-dark: #7f897d;
-  --grey1-dark: #859289;
-  --grey2-dark: #9aa79d;
-  --faded-red: #fb4934;
-  --faded-orange: #fe8019;
-  --faded-yellow: #fabd2f;
-  --faded-green: #b8bb26;
-  --faded-aqua: #8ec07c;
-  --faded-blue: #83a598;
-  --faded-purple: #d3869b;
-  --dim-red: #cc241d;
-  --dim-orange: #d65d0e;
-  --dim-yellow: #d79921;
-  --dim-green: #98971a;
-  --dim-aqua: #689d6a;
-  --dim-blue: #458588;
-  --dim-purple: #b16286;
-  --bg0-light: #f0edd8;
-  --bg1-light: #f6f1dd;
-  --bg-light: #fdf6e3;
-  --bg2-light: #f3efda;
-  --bg3-light: #edead5;
-  --bg4-light: #e4e1cd;
-  --bg5-light: #dfdbc8;
-  --grey0-light: #a4ad9e;
-  --grey1-light: #939f91;
-  --grey2-light: #879686;
-  --shadow-light: #3c474d20;
-  --bg_visual_light: #eaedc8;
-  --bg_red_light: #fbe3da;
-  --bg_green_light: #f0f1d2;
-  --bg_blue_light: #e9f0e9;
-  --bg_yellow_light: #faedcd;
-  --fg-light: #5c6a72;
-  --light-red: #f85552;
-  --light-orange: #f57d26;
-  --light-yellow: #bf983d;
-  --light-green: #899c40;
-  --light-aqua: #569d79;
-  --light-blue: #5a93a2;
-  --light-purple: #b87b9d;
-  --light-dim-red: #f1706f;
-  --light-dim-orange: #f39459;
-  --light-dim-yellow: #e4b649;
-  --light-dim-green: #a4bb4a;
-  --light-dim-aqua: #6ec398;
-  --light-dim-blue: #6cb3c6;
-  --light-dim-purple: #e092be;
-
-  --font-monospace: "Source Code Pro", "Source Code Pro", "Source Code Pro";
-
   --titleFont: var(--font-text) !important;
   --headerFont: var(--font-text) !important;
   --bodyFont: var(--font-text) !important;
@@ -459,8 +393,8 @@ body {
 }
 
 /* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
+:root,
+html {
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -508,33 +442,40 @@ html[saved-theme="dark"] {
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  --background-primary: var(--bg-dark);
-  --background-primary-alt: var(--bg-dark);
-  --background-secondary: var(--bg-dark);
-  --background-secondary-alt: var(--bg-dark);
-  --text-normal: var(--fg-dark);
-  --text-faint: var(--grey1-dark);
-  --text-title-h1: var(--dim-red);
-  --text-title-h2: var(--dim-orange);
-  --text-title-h3: var(--dim-yellow);
-  --text-title-h4: var(--dim-green);
-  --text-title-h5: var(--dim-aqua);
-  --text-title-h6: var(--dim-purple);
-  --text-link: var(--faded-blue);
-  --text-a: var(--dim-aqua);
-  --text-a-hover: var(--faded-aqua);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --pre-code: var(--bg1-dark);
-  --text-highlight-bg: var(--bg_green);
-  --interactive-accent: var(--dim-aqua);
-  --interactive-before: var(--bg5-dark);
-  --background-modifier-border: var(--bg5-dark);
-  --text-accent: var(--dim-blue);
-  --interactive-accent-rgb: var(--dim-blue);
-  --inline-code: var(--dim-blue);
-  --code-block: var(--fg-dark);
-  --vim-cursor: var(--faded-blue);
-  --text-selection: var(--bg5-dark);
+  --accent-1: #ff00ff;
+  --accent-2: #00ffff;
+  --accent-3: #00ff00;
+  --accent-4: #ffff00;
+  --accent-5: #ff0000;
+  --accent-6: #0000ff;
+  --accent-1-muted: #ff79c6;
+  --accent-2-muted: #8be9fd;
+  --accent-3-muted: #50fa7b;
+  --accent-4-muted: #ffb86c;
+  --accent-5-muted: #ff5555;
+  --accent-6-muted: #bd93f9;
+  --background-primary: #2b213a;
+  --background-primary-alt: #171520;
+  --background-secondary: #1a1836;
+  --background-secondary-alt: #242043;
+  --text-accent: #ff1690;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: var(--accent-1);
+  --text-muted: var(--accent-1-muted);
+  --text-faint: var(--accent-6-muted);
+  --interactive-normal: var(--accent-2);
+  --interactive-hover: var(--accent-2-muted);
+  --interactive-accent: var(--accent-2);
+  --interactive-accent-hover: var(--accent-2-muted);
+  --background-accent: #000;
+  --background-modifier-border: var(--accent-2);
+  --text-highlight-bg: #ffd319;
+  --text-selection: rgba(0, 122, 255, 0.2);
+  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --interactive-accent-rgb: 72, 54, 153;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
 
   code[data-theme*=" "] {
     color: var(--shiki-dark);
@@ -556,96 +497,6 @@ html[saved-theme="dark"] {
   }
 }
 /* END DARK */
-
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 233, 49, 71;
-  --color-red: #e93147;
-  --color-orange-rgb: 236, 117, 0;
-  --color-orange: #ec7500;
-  --color-yellow-rgb: 224, 172, 0;
-  --color-yellow: #e0ac00;
-  --color-green-rgb: 8, 185, 78;
-  --color-green: #08b94e;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-cyan: #00bfbc;
-  --color-blue-rgb: 8, 109, 221;
-  --color-blue: #086ddd;
-  --color-purple-rgb: 120, 82, 238;
-  --color-purple: #7852ee;
-  --color-pink-rgb: 213, 57, 132;
-  --color-pink: #d53984;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-base-100: #222222;
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-
-  --background-primary: var(--bg-light);
-  --background-primary-alt: var(--bg-light);
-  --background-secondary: var(--bg-light);
-  --background-secondary-alt: var(--bg-light);
-  --text-normal: var(--fg-light);
-  --text-faint: var(--grey1-light);
-  --text-title-h1: var(--light-red);
-  --text-title-h2: var(--light-orange);
-  --text-title-h3: var(--light-yellow);
-  --text-title-h4: var(--light-green);
-  --text-title-h5: var(--light-aqua);
-  --text-title-h6: var(--light-purple);
-  --text-link: var(--light-blue);
-  --text-a: var(--light-dim-blue);
-  --text-a-hover: var(--light-blue);
-  --text-mark: rgba(215, 153, 33, 0.4);
-  --pre-code: var(--bg1-light);
-  --text-highlight-bg: var(--light-dim-green);
-  --interactive-accent: var(--bg5-light);
-  --interactive-before: var(--bg5-light);
-  --background-modifier-border: var(--bg5-light);
-  --text-accent: var(--bg5-light);
-  --interactive-accent-rgb: var(--light-dim-green);
-  --inline-code: var(--light-blue);
-  --code-block: var(--fg-light);
-  --vim-cursor: var(--light-blue);
-  --text-selection: rgba(189, 174, 147, 0.5);
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-
-  .callout {
-    @each $type in $callout-types {
-      &[data-callout="#{$type}"] {
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
-      }
-    }
-  }
-}
-/* END LIGHT */
 
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
@@ -1188,63 +1039,8 @@ body {
 
 /* START CANVAS GRAPH WORKAROUND */
 
-/* START LIGHT GRAPH */
-:root:root[saved-theme="light"] {
-  --highlight-fallback: 258, 88%, 66%;
-  --textHighlight-fallback: 255, 208, 0;
-  --light: var(
-    --graph-node,
-    var(--text-muted, var(--background-primary, var(--color-base-00, #ffffff)))
-  ) !important;
-  --lightgray: var(
-    --graph-line,
-    var(
-      --color-base-35,
-      var(
-        --background-modifier-border-focus,
-        var(--background-modifier-border, var(--color-base-30, #e0e0e0))
-      )
-    )
-  ) !important;
-  --gray: var(
-    --graph-node,
-    var(
-      --text-muted,
-      var(
-        --graph-text,
-        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #ababab)))
-      )
-    )
-  ) !important;
-  --darkgray: var(
-    --graph-node-unresolved,
-    var(--text-faint, var(--text-normal, var(--color-base-100, #222222)))
-  ) !important;
-  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
-  --secondary: var(
-    --graph-node-focused,
-    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent, #8a5cf5))))
-  ) !important;
-  --tertiary: var(
-    --graph-node-tag,
-    var(
-      --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #a386f9)))
-    )
-  ) !important;
-  --highlight: var(
-    --tag-background,
-    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
-  ) !important;
-  --textHighlight: var(
-    --text-highlight-bg,
-    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
-  ) !important;
-}
-/* END LIGHT GRAPH */
-
 /* START DARK GRAPH */
-:root:root[saved-theme="dark"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --textHighlight-fallback: 255, 208, 0;
   --light: var(

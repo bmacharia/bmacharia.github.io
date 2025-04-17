@@ -1,10 +1,10 @@
-# AbsoluteGruv
+# 80s Neon
 
-[AbsoluteGruv](#)
+[80s Neon](#)
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/absolutegruv/)
+[Open live preview](https://quartz-themes.github.io/80s-neon/)
 
 ## Usage
 
@@ -12,7 +12,7 @@
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- absolutegruv
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- 80s-neon
 ```
 
 ### Manual install
@@ -20,7 +20,7 @@
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh absolutegruv
+./action.sh 80s-neon
 ```
 
 ### Install script (Advanced)
@@ -28,5 +28,5 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 After installing:
 
 ```bash
-npm run theme absolutegruv
+npm run theme 80s-neon
 ```
