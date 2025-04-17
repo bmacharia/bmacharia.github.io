@@ -1,10 +1,10 @@
-# Adwaita
+# AbsoluteGruv
 
-[Adwaita](https://github.com/birneee)
+[AbsoluteGruv](#)
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/adwaita/)
+[Open live preview](https://quartz-themes.github.io/absolutegruv/)
 
 ## Usage
 
@@ -12,7 +12,7 @@
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- adwaita
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- absolutegruv
 ```
 
 ### Manual install
@@ -20,7 +20,7 @@
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh adwaita
+./action.sh absolutegruv
 ```
 
 ### Install script (Advanced)
@@ -28,5 +28,5 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 After installing:
 
 ```bash
-npm run theme adwaita
+npm run theme absolutegruv
 ```
