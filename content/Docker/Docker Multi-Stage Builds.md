@@ -25,7 +25,7 @@ With multi-stage builds, you use multiple `FROM` statements in your Dockerfile
 
 Below is my new Dockerfile with each line explained
 
-```Dockerfile
+```shell
 
 # Stage 1: Builder the first stage of the build process
 # Use the official Python 3.13 image based on Alpine Linux as the base.
