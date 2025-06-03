@@ -8,4 +8,4 @@ My passion lies in streamlining software delivery and optimizing cloud operation
 
 I'm always learning, and sharing technical knowledge and tutorials.
 
-Whether it's managing Kubernetes clusters in my homelab or exploring the depths of Linux systems, I'm always eager to tackle complex challenges and help others grow in their DevOps journeys.
+Whether it's managing Kubernetes clusters in my homelab or exploring the depths of Linux systems, I'm always eager to tackle complex challenges and learn more which is my favorite thing to do!

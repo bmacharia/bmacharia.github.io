@@ -1,11 +1,11 @@
-# Adrenaline
+# 80s Neon
 
-- Theme: Adrenaline
-- Author: <a href="https://github.com/Spekulucius" target="_blank" rel="noopener noreferrer">Spekulucius</a>
+- Theme: 80s Neon
+- Author: deathau
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/adrenaline/)
+[Open live preview](https://quartz-themes.github.io/80s-neon/)
 
 ## Usage
 
@@ -13,7 +13,7 @@
 
 ```yaml
 env:
-  THEME_NAME: adrenaline
+  THEME_NAME: 80s-neon
 ```
 
 ```yaml
@@ -26,7 +26,7 @@ env:
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh adrenaline
+./action.sh 80s-neon
 ```
 
 ### Manual install
