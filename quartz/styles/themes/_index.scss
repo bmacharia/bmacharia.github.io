@@ -8,20 +8,11 @@
 /* quartz themes dark-only */
 
 :root:root {
-  --accent-1: #ff00ff;
-  --accent-1-muted: #ff79c6;
-  --accent-2: #00ffff;
-  --accent-2-muted: #8be9fd;
-  --accent-3: #00ff00;
-  --accent-4: #ffff00;
-  --accent-5: #ff0000;
-  --accent-6: #0000ff;
-  --accent-6-muted: #bd93f9;
-  --background-modifier-border: var(--accent-2);
+  --background-modifier-border: var(--bg5-dark);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #2b213a;
-  --background-primary-alt: #171520;
-  --background-secondary: #1a1836;
+  --background-primary: var(--bg-dark);
+  --background-primary-alt: var(--bg-dark);
+  --background-secondary: var(--bg-dark);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -59,35 +50,24 @@
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: var(--accent-2);
-  --interactive-accent-hover: var(--accent-2-muted);
+  --interactive-accent: var(--dim-aqua);
+  --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: #ff1690;
-  --text-accent-hover: #7a6ae6;
-  --text-faint: var(--accent-6-muted);
-  --text-highlight-bg: #ffd319;
-  --text-muted: var(--accent-1-muted);
-  --text-normal: var(--accent-1);
+  --text-a: var(--dim-aqua);
+  --text-a-hover: var(--faded-aqua);
+  --text-accent: var(--dim-blue);
+  --text-faint: var(--grey1-dark);
+  --text-highlight-bg: var(--bg_green);
+  --text-normal: var(--fg-dark);
+  --text-selection: var(--bg5-dark);
   color-scheme: dark;
 
   .callout {
     --callout-blend-mode: lighten;
-  }
-}
-
-:root:root:root {
-  body {
-    --text-normal: rgba(255, 220, 255, 0.8);
-    --text-faint: rgba(255, 220, 255, 0.25);
-    --text-accent: var(--accent-2);
-    --lightgray: var(--hr-color);
-    p {
-      color: var(--text-normal);
-    }
   }
 }
 
@@ -241,6 +221,14 @@
 }
 
 :root {
+  --bg_green: #98971a;
+  --bg-dark: #282828;
+  --bg5-dark: #928374;
+  --dim-aqua: #689d6a;
+  --dim-blue: #458588;
+  --faded-aqua: #8ec07c;
+  --fg-dark: #ebdbb2;
+  --grey1-dark: #859289;
 }
 body {
   --accent-h: 258;
@@ -309,7 +297,6 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
-  --cursor: default;
   --cursor-link: pointer;
   --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -318,12 +305,7 @@ body {
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-medium: 500;
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
-    var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-override: "??";
-  --font-monospace-theme: "??";
+  --font-monospace: "Source Code Pro", "Source Code Pro", "Source Code Pro";
   --font-normal: 400;
   --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
     "Arial";
@@ -454,6 +436,8 @@ body {
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: var(--background-primary);
@@ -461,7 +445,7 @@ body {
   color: var(--text-normal);
   contain: initial;
   font-family: var(--font-interface);
-  font-size: var(--font-ui-medium);
+  font-size: 16px;
   height: 100%;
   line-height: var(--line-height-tight);
   margin: 0;
@@ -476,20 +460,11 @@ body {
 /* START DARK */
 :root,
 html {
-  --accent-1: #ff00ff;
-  --accent-1-muted: #ff79c6;
-  --accent-2: #00ffff;
-  --accent-2-muted: #8be9fd;
-  --accent-3: #00ff00;
-  --accent-4: #ffff00;
-  --accent-5: #ff0000;
-  --accent-6: #0000ff;
-  --accent-6-muted: #bd93f9;
-  --background-modifier-border: var(--accent-2);
+  --background-modifier-border: var(--bg5-dark);
   --background-modifier-form-field: var(--color-base-25);
-  --background-primary: #2b213a;
-  --background-primary-alt: #171520;
-  --background-secondary: #1a1836;
+  --background-primary: var(--bg-dark);
+  --background-primary-alt: var(--bg-dark);
+  --background-secondary: var(--bg-dark);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -527,19 +502,20 @@ html {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --highlight-mix-blend-mode: darken;
-  --interactive-accent: var(--accent-2);
-  --interactive-accent-hover: var(--accent-2-muted);
+  --interactive-accent: var(--dim-aqua);
+  --interactive-accent-hover: var(--color-accent-1);
   --mono-rgb-100: 255, 255, 255;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: #ff1690;
-  --text-accent-hover: #7a6ae6;
-  --text-faint: var(--accent-6-muted);
-  --text-highlight-bg: #ffd319;
-  --text-muted: var(--accent-1-muted);
-  --text-normal: var(--accent-1);
+  --text-a: var(--dim-aqua);
+  --text-a-hover: var(--faded-aqua);
+  --text-accent: var(--dim-blue);
+  --text-faint: var(--grey1-dark);
+  --text-highlight-bg: var(--bg_green);
+  --text-normal: var(--fg-dark);
+  --text-selection: var(--bg5-dark);
   color-scheme: dark;
   code[data-theme*=" "] {
     color: var(--shiki-dark);
@@ -863,13 +839,11 @@ body {
     font-size: var(--h1-size);
     font-style: var(--h1-style);
     font-variant: var(--h1-variant);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
     line-height: var(--h1-line-height);
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
-    overflow: visible;
-    text-shadow: 0 0 0.5em var(--accent-1);
   }
   h1 a {
     --link-weight: var(--h1-weight);
@@ -881,13 +855,11 @@ body {
     font-size: var(--h2-size);
     font-style: var(--h2-style);
     font-variant: var(--h2-variant);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
     line-height: var(--h2-line-height);
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
-    overflow: visible;
-    text-shadow: 0 0 0.5em var(--accent-2);
   }
   h2 a {
     --link-weight: var(--h2-weight);
@@ -899,13 +871,11 @@ body {
     font-size: var(--h3-size);
     font-style: var(--h3-style);
     font-variant: var(--h3-variant);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
     line-height: var(--h3-line-height);
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
-    overflow: visible;
-    text-shadow: 0 0 0.5em var(--accent-3);
   }
   h3 a {
     --link-weight: var(--h3-weight);
@@ -917,13 +887,11 @@ body {
     font-size: var(--h4-size);
     font-style: var(--h4-style);
     font-variant: var(--h4-variant);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
     line-height: var(--h4-line-height);
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
-    overflow: visible;
-    text-shadow: 0 0 0.5em var(--accent-4);
   }
   h4 a {
     --link-weight: var(--h4-weight);
@@ -935,13 +903,11 @@ body {
     font-size: var(--h5-size);
     font-style: var(--h5-style);
     font-variant: var(--h5-variant);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
     line-height: var(--h5-line-height);
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
-    overflow: visible;
-    text-shadow: 0 0 0.5em var(--accent-5);
   }
   h5 a {
     --link-weight: var(--h5-weight);
@@ -953,13 +919,11 @@ body {
     font-size: var(--h6-size);
     font-style: var(--h6-style);
     font-variant: var(--h6-variant);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
     line-height: var(--h6-line-height);
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
-    overflow: visible;
-    text-shadow: 0 0 0.5em var(--accent-6);
   }
   h6 a {
     --link-weight: var(--h6-weight);
@@ -1077,13 +1041,11 @@ body {
       font-size: var(--h3-size);
       font-style: var(--h3-style);
       font-variant: var(--h3-variant);
-      font-weight: 600;
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
       line-height: var(--h3-line-height);
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
-      overflow: visible;
-      text-shadow: 0 0 0.5em var(--accent-3);
     }
     ul li {
       color: var(--nav-heading-color);
@@ -1155,13 +1117,15 @@ body {
         a {
           border-radius: var(--radius-s);
           color: var(--nav-item-color);
-          cursor: var(--cursor);
+          cursor: default;
           display: flex;
+          flex-direction: row;
           font-size: var(--nav-item-size);
           font-weight: var(--nav-item-weight);
           line-height: var(--line-height-tight);
           margin-bottom: var(--size-2-1);
           padding: var(--nav-item-padding);
+          width: 100%;
           &.active,
           &:hover {
             background-color: var(--nav-item-background-active);
@@ -1199,13 +1163,11 @@ body {
       font-size: var(--h3-size);
       font-style: var(--h3-style);
       font-variant: var(--h3-variant);
-      font-weight: 600;
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
       line-height: var(--h3-line-height);
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
-      overflow: visible;
-      text-shadow: 0 0 0.5em var(--accent-3);
     }
     ul.toc-content.overflow {
       li,
@@ -1227,13 +1189,11 @@ body {
       font-size: var(--h3-size);
       font-style: var(--h3-style);
       font-variant: var(--h3-variant);
-      font-weight: 600;
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
       line-height: var(--h3-line-height);
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
-      overflow: visible;
-      text-shadow: 0 0 0.5em var(--accent-3);
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
@@ -1351,13 +1311,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: var(--background-modifier-hover);
+                background-color: var(--text-selection);
               }
               & > ul > li > p {
                 background-color: transparent;
                 color: var(--text-normal);
                 &.match-tag {
-                  color: var(--accent-1);
+                  color: var(--tag-color);
                 }
               }
             }
