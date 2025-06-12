@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Cloud & Container Musings: A DevOps Journal"
+    pageTitle: "Cloud Native Musings: A DevOps Journal"
 
 ,
     pageTitleSuffix: "",
