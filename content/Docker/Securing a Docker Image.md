@@ -2,7 +2,7 @@ The reason why I want a secure Docker image is because Docker runs all of its co
 
 To fix this issue I have changed the user to a non-root user, so as the user running inside the container has access to only what is needed to run the application
 
-```
+```Dockerfile
 FROM python:3.13-alpine AS builder
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/

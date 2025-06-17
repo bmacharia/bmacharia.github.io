@@ -10,7 +10,7 @@ Lately, I’ve been deep in the world of GitHub Actions and CI/CD pipelines—au
 
 At its core, k3d spins up full Kubernetes clusters inside Docker containers. You get the real deal—API server, controllers, CoreDNS, and all—without the resource overhead of a VM-based cluster.
 
-> _Reflection:_ I love that k3d blurs the line between “works on my machine” and “works in production.” It’s the closest you can get to a real cluster while still coding on your laptop.
+> I love that k3d blurs the line between “works on my machine” and “works in production.” It’s the closest you can get to a real cluster while still coding on your laptop.
 
 ---
 
@@ -23,7 +23,7 @@ I install k3d through [mise](https://mise.jdx.dev/about.html), my go-to tool for
 mise use k3d
 ```
 
-> _Reflection:_ When I first started, I manually downloaded every binary and set PATHs. Mise simplifies that—and it’s one less obstacle between me and a fresh cluster.
+> When I first started, I manually downloaded every binary and set PATHs. Mise simplifies that—and it’s one less obstacle between me and a fresh cluster.
 
 ---
 
