@@ -1,5 +1,5 @@
 ---
-title: Cloud, Containers, and Rambles
+title: Cloud, Containers, and Soliloquies
 ---
 
 Hello—I'm Babu Macharia, and welcome to my digital journal dedicated to DevOps-stye Infrastructure, Cloud Engineering, and the art of Automating all the things.
