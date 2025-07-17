@@ -2,9 +2,9 @@
 title: Cloud, Containers, and Rambles
 ---
 
-Hello—I'm Babu, and welcome to my digital playground dedicated to DevOps, cloud engineering, and the art of automating all the things. Imagine a blend between a detailed lab notebook and a lively tech meetup—where practical tutorials on Infrastructure as Code (IaC), Kubernetes deep-dives from my home-lab (always evolving!), and candid insights meet coffee-driven creativity.
+Hello—I'm Babu Macharia, and welcome to my digital journal dedicated to DevOps-stye Infrastructure, Cloud Engineering, and the art of Automating all the things.
 
-As a Navy veteran turned cloud engineer, I'm passionate about simplifying complex cloud and automation topics. My goal is straightforward: demystify the entire DevOps lifecycle—from crafting reusable Terraform modules and orchestrating Kubernetes clusters to implementing observability in microservices and securing cloud environments.
+As a Navy Veteran turned Cloud Engineer, I'm passionate about simplifying complex cloud and automation topics. My goal is straightforward: demystify the entire DevOps lifecycle—from crafting reusable Terraform modules and orchestrating Kubernetes clusters to implementing observability in microservices and securing cloud environments.
 
 Along the way, I share my full experience—wins, frustrations, and those thrilling “aha!” moments when deployments finally click. You’ll find resources and reflections rooted in real-world scenarios that go beyond textbook examples, shaped by genuine curiosity and continuous experimentation.
 
