@@ -1,5 +1,3 @@
-
-
 ## Pivoting from CI/CD to Kubernetes with k3d
 
 Lately, I’ve been deep in the world of GitHub Actions and CI/CD pipelines—automating releases, building images, and wiring up deployments. But every now and then, you need to remind yourself why the container orchestration layer exists in the first place. Enter **k3d**, a lightweight wrapper around Rancher’s minimal Kubernetes distribution, k3s. In this post, I’ll walk through setting up k3d locally, reflect on why it matters, and outline how I’m using it for both development and future CI/CD tests.
@@ -38,10 +36,10 @@ k3d cluster create
 You’ll see output like this:
 
 ```
-INFO[0000] Prep: Network                                
+INFO[0000] Prep: Network
 INFO[0000] Created network 'k3d-mycluster'
 ...
-INFO[0037] Cluster 'mycluster' created successfully!    
+INFO[0037] Cluster 'mycluster' created successfully!
 INFO[0037] You can now use it like this:
 kubectl cluster-info
 ```
@@ -81,11 +79,8 @@ kube-system   metrics-server-5985cbc9d7-rjcnt           1/1     Running     0   
 Full disclosure: my entire dev environment—including Docker daemon and this k3d cluster—lives inside a VS Code Devcontainer using Docker-in-Docker. This meta-container approach means:
 
 1. **Isolation**: My host remains pristine.
-    
 2. **Reproducibility**: Anyone can clone the repo, launch the same container, and get an identical k3d environment.
-    
 3. **CI/CD Parity**: The same Devcontainer config can power local and pipeline tests.
-    
 
 > Initially, juggling Docker-in-Docker felt risky, but the payoff in consistency has been huge. No more “it works locally” excuses when builds break on CI.
 
@@ -94,11 +89,8 @@ Full disclosure: my entire dev environment—including Docker daemon and this k3
 ### Why k3d for CI/CD?
 
 - **Speed**: Clusters spin up in seconds versus minutes.
-    
 - **Resource Efficiency**: Tiny memory and CPU footprint.
-    
 - **Parity**: Tests run against a real API server rather than mocks.
-    
 
 My next step is to wire these k3d clusters into GitHub Actions jobs—deploying manifests, running integration tests, and tearing them down automatically. But that story belongs to another post.
 
