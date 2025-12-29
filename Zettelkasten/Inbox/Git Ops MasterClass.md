@@ -1,4 +1,4 @@
-Deploy an application to a kubernetes cluster using flux and gitOps principles 
+777Deploy an application to a kubernetes cluster using flux and gitOps principles 
 
 
 As of now the only thing that i have in my pico-cluster repo is the flux manifests
