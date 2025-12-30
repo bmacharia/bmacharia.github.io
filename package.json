@@ -20,7 +20,11 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "q:serve": "npx quartz serve",
     "q:build": "npx quartz build",
-    "blog:promote": "python3 content/09_Automation/promote_blog.py"
+    "blog:draft": "python3 content/09_Automation/promote_blog.py",
+    "blog:publish": "python3 content/09_Automation/promote_blog.py --publish",
+    "review:weekly": "python3 content/09_Automation/weekly_review.py content"
+  }
+
   },
   "engines": {
     "npm": ">=10.9.2",
