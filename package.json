@@ -23,8 +23,6 @@
     "blog:draft": "python3 content/09_Automation/promote_blog.py",
     "blog:publish": "python3 content/09_Automation/promote_blog.py --publish",
     "review:weekly": "python3 content/09_Automation/weekly_review.py content"
-  }
-
   },
   "engines": {
     "npm": ">=10.9.2",
