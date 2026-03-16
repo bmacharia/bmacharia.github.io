@@ -1,3 +1,10 @@
+---
+title: My Kubernetes Homelab Journey
+tags: [homelab, kubernetes, k3s]
+description: Documenting the journey of setting up a Kubernetes home lab — distribution choices, trade-offs, and lessons learned.
+publish: true
+---
+
 # My Kubernetes Homelab Journey
 
 In this blog, I’ll document my journey setting up a Kubernetes home lab. This reflective exploration balances technical detail with insights gained along the way, structured into clear, manageable sections.

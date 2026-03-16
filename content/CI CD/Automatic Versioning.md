@@ -1,3 +1,9 @@
+---
+title: Automatic Versioning and Deployment with GitOps
+tags: [ci-cd, gitops, versioning, kubernetes]
+description: How to automate application versioning and deployment using Git tags and GitHub Actions.
+publish: true
+---
 
 # Automatic Versioning and Deployment with GitOps
 

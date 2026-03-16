@@ -1,3 +1,10 @@
+---
+title: Introduction to K3d
+tags: [kubernetes, k3d, devops, local-dev]
+description: Getting started with k3d — Kubernetes clusters inside Docker, ideal for local development and CI.
+publish: true
+---
+
 ## Pivoting from CI/CD to Kubernetes with k3d
 
 Lately, I’ve been deep in the world of GitHub Actions and CI/CD pipelines—automating releases, building images, and wiring up deployments. But every now and then, you need to remind yourself why the container orchestration layer exists in the first place. Enter **k3d**, a lightweight wrapper around Rancher’s minimal Kubernetes distribution, k3s. In this post, I’ll walk through setting up k3d locally, reflect on why it matters, and outline how I’m using it for both development and future CI/CD tests.

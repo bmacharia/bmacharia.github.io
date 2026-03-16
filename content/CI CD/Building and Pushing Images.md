@@ -1,4 +1,9 @@
-
+---
+title: Building and Pushing Docker Images from CI/CD
+tags: [ci-cd, docker, github-actions]
+description: Automating container image builds and registry pushes with GitHub Actions on every tagged release.
+publish: true
+---
 
 ## Building and Pushing Docker Images from Your CI/CD Pipeline
 

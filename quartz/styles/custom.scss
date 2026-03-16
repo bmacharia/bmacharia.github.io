@@ -1,4 +1,67 @@
 @use "./base.scss";
 @use "./themes";
 
-// put your custom CSS here!
+// ─── Technical aesthetic overrides ───────────────────────────────────────────
+
+// Site title: monospace with a terminal prompt prefix
+.page-title {
+  font-family: var(--codeFont) !important;
+  letter-spacing: -0.02em;
+
+  &::before {
+    content: "> ";
+    color: var(--secondary);
+  }
+}
+
+// Headings: tighter tracking, monospace for h1–h3
+h1,
+h2,
+h3 {
+  font-family: var(--codeFont) !important;
+  letter-spacing: -0.03em;
+}
+
+// Article title: bottom border separator
+.article-title {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+// Horizontal rules: dashed terminal-style divider
+hr {
+  background: none !important;
+  border: none;
+  border-top: 1px dashed var(--gray) !important;
+}
+
+// Code blocks: accent left border
+pre {
+  border-left: 3px solid var(--secondary) !important;
+  border-radius: 0 5px 5px 0 !important;
+}
+
+// Blockquotes: stronger accent
+blockquote {
+  border-left: 3px solid var(--secondary);
+  background-color: var(--highlight);
+  border-radius: 0 5px 5px 0;
+  padding: 0.6rem 1rem;
+}
+
+// Links in dark mode: subtle glow on hover
+[saved-theme="dark"] a:hover {
+  text-shadow: 0 0 8px color-mix(in srgb, var(--secondary) 50%, transparent);
+}
+
+// Tag pills: monospace, outlined style
+.tag-link {
+  font-family: var(--codeFont) !important;
+  font-size: 0.78rem !important;
+}
+
+// Footer: monospace
+footer {
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+}

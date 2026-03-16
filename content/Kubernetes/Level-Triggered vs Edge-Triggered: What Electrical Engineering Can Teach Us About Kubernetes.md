@@ -1,3 +1,10 @@
+---
+title: "Level-Triggered vs Edge-Triggered: What Electrical Engineering Can Teach Us About Kubernetes"
+tags: [kubernetes, systems-design, devops]
+description: How edge-triggered and level-triggered circuit concepts map to Kubernetes controller reconciliation.
+publish: true
+---
+
 # **Level-Triggered vs Edge-Triggered: What Electrical Engineering Can Teach Us About Kubernetes**
 
 If you’ve ever cracked open an electronics textbook, you’ve seen the terms **edge-triggered** and **level-triggered**. They describe how circuits respond to changes in electrical signals. But these concepts aren’t limited to hardware — they map surprisingly well to **distributed systems**, and especially to **Kubernetes**.

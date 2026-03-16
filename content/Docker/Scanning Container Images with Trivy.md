@@ -1,4 +1,9 @@
-
+---
+title: Scanning Container Images with Trivy
+tags: [docker, security, trivy, containers]
+description: Using Trivy to scan container images for CVEs and reduce your attack surface.
+publish: true
+---
 
 ## What is Trivy?
 

@@ -1,3 +1,9 @@
+---
+title: Kubernetes Basics
+tags: [kubernetes, containers, devops]
+description: An introduction to Kubernetes — what it is, why it exists, and the problems it solves.
+publish: true
+---
 
 ## What is Kubernetes
 
@@ -12,9 +18,9 @@ According the the [kubernetes.io](https://kubernetes.io/) website, Kubernetes is
 
 ## Monolithic vs Many Small Applications
 
-In a traditional/legacy environment, an application (such as a webserver) would be placed on a dedicated server. As the webserver traffic increases, the application would be tuned, and perhaps moved to a different machine with larger and more powerful hardware. As time passes, a lot of cutomization may have been done in order to meet the current web traffic needs.
+In a traditional/legacy environment, an application (such as a webserver) would be placed on a dedicated server. As the webserver traffic increases, the application would be tuned, and perhaps moved to a different machine with larger and more powerful hardware. As time passes, a lot of customization may have been done in order to meet the current web traffic needs.
 
-In contrast Kubernetes approached the same issue by deploying many small applications, or mircoservices. Each mircoservice should be written such that to expect many possible agents available to respond to a request.  It is also important that each microservice expects others to die and eventually be replaced, leading to a transient sever deployment. For, example instead of a large Apache web server responding to page requests, multiple Nginx servers would respond to page requests with a different microservice handing authentication
+In contrast Kubernetes approached the same issue by deploying many small applications, or microservices. Each microservice should be written such that to expect many possible agents available to respond to a request.  It is also important that each microservice expects others to die and eventually be replaced, leading to a transient sever deployment. For, example instead of a large Apache web server responding to page requests, multiple Nginx servers would respond to page requests with a different microservice handing authentication
 	
 ## Challenges
 

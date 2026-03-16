@@ -1,3 +1,10 @@
+---
+title: Securing a Docker Image
+tags: [docker, security, containers]
+description: How to run Docker containers as a non-root user to limit privilege escalation risk.
+publish: true
+---
+
 The reason why I want a secure Docker image is because Docker runs all of its containers under the `root` user domain because it requires access to resources like network configuration, process management, and the filesystem.  What this means is that the processes running inside the containers also run as `root`. This elevated privilege is a huge security risk especially in production. Running an application as root inside of a container gives the application access that it should not have.
 
 To fix this issue I have changed the user to a non-root user, so as the user running inside the container has access to only what is needed to run the application

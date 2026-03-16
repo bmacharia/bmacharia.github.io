@@ -1,3 +1,10 @@
+---
+title: Implementing Automatic Releases with release-please
+tags: [ci-cd, github-actions, releases, versioning]
+description: Integrating Google's release-please-action for fully automated, traceable release management.
+publish: true
+---
+
 Below is a rewritten draft that balances technical detail with a bit of personal reflection on the choices and lessons learned along the way. Feel free to tweak any sections to better match your own voice or specific insights!
 
 ---

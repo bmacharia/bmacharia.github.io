@@ -1,4 +1,10 @@
-[[Ephemeral Kubernetes Environments]]
+---
+title: End-to-End Testing in a CI/CD Pipeline
+tags: [kubernetes, testing, ci-cd, k3d]
+description: Adding end-to-end Kubernetes tests to a CI/CD pipeline using k3d and Python.
+publish: true
+---
+
 ### End to End Testing with k3d and Python
 
 In a previous post [[Ephemeral Kubernetes Environments]] I explained a method for creating ephemeral Kubernetes Environments. Now it is time to see what kind of cool stuff we can do with our clusters.

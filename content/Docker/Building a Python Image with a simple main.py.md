@@ -1,4 +1,11 @@
-# Lets start with a Simple App
+---
+title: Building a Python Image with a Simple main.py
+tags: [docker, python, containers, uv]
+description: A walkthrough for building a minimal Python Docker image using uv as the package manager.
+publish: true
+---
+
+## Lets start with a Simple App
 
 
 First I will start with a simple Python application, It will be a demo application to play around with, what I want to accomplish or better yet explore are

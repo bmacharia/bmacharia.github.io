@@ -1,3 +1,9 @@
+---
+title: Docker Introduction Basics
+tags: [docker, containers, devops]
+description: An introduction to Docker — what it is, how it runs, and how to build your first image.
+publish: true
+---
 
 # Docker
 
@@ -5,7 +11,7 @@ Docker is a tool that lets you package software into an image, and then run that
 
 So why is this useful
 
-- A docker images includes all the files you need to run an application
+- A docker image includes all the files you need to run an application
 - All the OS system files, C libraries, the correct versions python for example 
 - The Docker images know how to start the application
 - And on top of that the application will run the exact same way
@@ -13,7 +19,7 @@ So why is this useful
 ## How Docker Runs
 
 Docker is a client/server application, the command line tool `docker`
-sends commands to a server, `dockered`
+sends commands to a server, `dockerd`
 
 
 I can use a Docker Image to run a container

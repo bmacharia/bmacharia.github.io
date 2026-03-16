@@ -1,3 +1,10 @@
+---
+title: Building a Production-Ready K3s Control Plane on External Etcd With Full TLS
+tags: [kubernetes, k3s, etcd, tls, homelab]
+description: A complete guide to setting up K3s with an external etcd cluster and mutual TLS authentication.
+publish: true
+---
+
 ## **Building a Production-Ready K3s Control Plane on External Etcd With Full TLS**
 
 This artifact documents the complete process I followed to design, build, secure, and troubleshoot a highly available **external etcd cluster** and integrate it with a **K3s Kubernetes control plane**, using:

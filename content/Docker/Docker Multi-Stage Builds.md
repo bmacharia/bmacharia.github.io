@@ -1,3 +1,10 @@
+---
+title: Docker Multi-Stage Builds
+tags: [docker, containers, devops, optimization]
+description: Using multi-stage Docker builds and cache mounts to produce the smallest possible images.
+publish: true
+---
+
 In a previous post I wrote Scanning Container Images with [Trivy](https://trivy.dev/latest/), I went through the process of reducing the size of my container image, just by changing the container base image.  My current `Dockerfile` is below
 
 ```Dockerfile

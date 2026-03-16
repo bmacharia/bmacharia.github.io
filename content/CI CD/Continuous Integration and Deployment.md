@@ -1,3 +1,10 @@
+---
+title: Continuous Integration and Deployment
+tags: [ci-cd, devops, github-actions]
+description: An overview of CI/CD principles and how GitHub Actions implements them for cloud-native workloads.
+publish: true
+---
+
 # Continuous Integration and Continuous Deployment (CI/CD)
 
 ## Introduction

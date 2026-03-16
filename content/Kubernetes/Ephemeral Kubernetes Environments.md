@@ -1,3 +1,9 @@
+---
+title: Ephemeral Kubernetes Environments
+tags: [kubernetes, k3d, devops, testing]
+description: How to spin up disposable Kubernetes clusters with k3d for development and testing workflows.
+publish: true
+---
 
 As a DevOps engineer, nothing gives me more satisfaction than smoothing out the path for developers. My mantra is simple: if I can make it effortless for someone to spin up a dev environment and start coding, we’ve already won half the battle.
 

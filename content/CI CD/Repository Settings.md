@@ -1,3 +1,10 @@
+---
+title: Laying the Foundation for a Production-Grade CI/CD Pipeline
+tags: [ci-cd, github, devops]
+description: Essential GitHub repository settings and branch protections before writing a single workflow file.
+publish: true
+---
+
 Here’s a revised draft that balances the nuts-and-bolts of repository configuration with some candid reflections on why these settings matter:
 
 ---
