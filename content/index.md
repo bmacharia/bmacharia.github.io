@@ -14,3 +14,6 @@ Whether you're an engineer troubleshooting container networking, exploring fresh
 Let’s connect, learn, and break things (responsibly) together!
 
 [My LinkedIn](https://www.linkedin.com/in/babu-macharia/)
+
+---
+Email: babu.macharia@protonmail.com | LinkedIn: [linkedin.com/in/babu-macharia](https://linkedin.com/in/babu-macharia) | GitHub: [github.com/bmacharia](https://github.com/bmacharia)
