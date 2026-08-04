@@ -57,12 +57,7 @@ Navigation.css = `
 }
 
 .nav-menu a {
-  color: var(--dark);
   text-decoration: none;
-}
-
-.nav-menu a:hover {
-  color: var(--secondary);
 }
 
 .nav-menu .nav-sep {

@@ -1,5 +1,9 @@
 @use "./base.scss";
-@use "./themes";
+// Note: themes/_index.scss (a vendored Gruvbox theme import from an old
+// experiment) is intentionally not used here — it overrode body background,
+// link colors, and graph-view variables via its own parallel Obsidian CSS
+// variable chain, fighting quartz.config.ts's colors. base.scss already
+// implements links/backgrounds correctly via --secondary/--tertiary/--light.
 
 // ─── Technical aesthetic overrides ───────────────────────────────────────────
 
@@ -10,7 +14,7 @@
 
   &::before {
     content: "> ";
-    color: var(--secondary);
+    color: var(--tertiary);
   }
 }
 
@@ -51,7 +55,7 @@ blockquote {
 
 // Links in dark mode: subtle glow on hover
 [saved-theme="dark"] a:hover {
-  text-shadow: 0 0 8px color-mix(in srgb, var(--secondary) 50%, transparent);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--tertiary) 50%, transparent);
 }
 
 // Tag pills: monospace, outlined style
