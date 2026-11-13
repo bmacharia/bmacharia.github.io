@@ -13,6 +13,7 @@ const navItems: NavItem[] = [
   { label: "Projects", slug: "HomeLab/Projects" as FullSlug },
   { label: "About", slug: "HomeLab/About" as FullSlug },
   { label: "Contact", slug: "HomeLab/Contact" as FullSlug },
+  { label: "Hire Me", slug: "recruiters" as FullSlug },
 ]
 
 const Navigation: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
