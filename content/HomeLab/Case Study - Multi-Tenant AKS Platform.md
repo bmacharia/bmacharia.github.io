@@ -111,6 +111,10 @@ Running each apply, checking the results, and debugging what broke were mine; th
 - **A Python CLI for onboarding.** Not every developer knows Terraform. A small CLI (for example, built with Typer) would let anyone onboard a customer with one command, and it would take manifest generation out of Terraform so Terraform only manages infrastructure.
 - **Renovate for version updates.** Helm charts, operators, and images go stale quickly, and security fixes matter most. Renovate opens a pull request for each new version so updates are reviewed and applied promptly instead of forgotten. I already run it on my [pi-cluster](https://github.com/bmacharia/pi-cluster).
 
+## 10. What's next: the same platform on AWS and GCP
+
+To learn how the design carries across clouds, I'm rebuilding the same 10 phases on **AWS (EKS)** and **GCP (GKE)**. The phase-by-phase service mapping is already written, from AKS to EKS and GKE, Blob Storage to S3 and Cloud Storage, and Azure RBAC to IAM, including the Terraform provider changes: [cloud translation guide →](https://github.com/bmacharia/kubernetes-platform-engineering/blob/main/mercury-workflows-sanitized/cloud-translation-aws-gcp.md). In progress; each build will get its own write-up when it's public.
+
 ---
 
 **Related:** [[Level-Triggered vs Edge-Triggered: What Electrical Engineering Can Teach Us About Kubernetes]] explains the reconciliation model Flux and the CNPG operator rely on.
