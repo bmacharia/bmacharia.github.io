@@ -14,4 +14,4 @@ I'm a career changer who didn't just take a course. I built real infrastructure,
 - LinkedIn: [linkedin.com/in/babu-macharia](https://linkedin.com/in/babu-macharia)
 - GitHub: [github.com/bmacharia](https://github.com/bmacharia)
 
-Open to remote DevOps Engineer, Cloud Engineer, and Platform Engineer roles.
+Based in Tracy, California (San Francisco Bay Area). Open to remote DevOps Engineer, Platform Engineer, Site Reliability Engineer, and Cloud Engineer roles in the U.S., and hybrid roles in the Bay Area. Recruiters: [start here](../recruiters).
