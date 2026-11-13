@@ -1,6 +1,7 @@
 ---
 title: For Recruiters
 publish: true
+description: "Babu Macharia for recruiters: DevOps, Platform, SRE, and Cloud Engineer roles. Based in the San Francisco Bay Area, open to remote U.S. roles. Stack, proof of work, and contact."
 ---
 
 **The 60-second version.**

@@ -1,6 +1,7 @@
 ---
 title: Babu Macharia — DevOps & Platform Engineer
 publish: true
+description: "Babu Macharia, DevOps and Platform Engineer and U.S. Navy veteran. Kubernetes, Terraform, GitOps, and CI/CD platforms with measured results. Open to remote and Bay Area roles."
 ---
 
 **DevOps & Platform Engineer · U.S. Navy Veteran · Kubernetes · Terraform · GitOps**
