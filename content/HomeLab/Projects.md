@@ -10,6 +10,8 @@ Production-grade multi-tenant Kubernetes platform built across 10 progressive ph
 
 **Tech:** Azure AKS, FluxCD, Terraform, CloudNativePG, Cilium, Prometheus, Entra ID, Pod Security Standards
 
+**Read more:** [[Case Study - Multi-Tenant AKS Platform|Full case study]] · [[decisions|Decision records]]
+
 [View on GitHub →](https://github.com/bmacharia/kubernetes-platform-engineering)
 
 ---
