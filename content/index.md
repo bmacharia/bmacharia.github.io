@@ -12,7 +12,7 @@ I build and operate Kubernetes platforms end to end: infrastructure as code, Git
 
 ## Proof of work
 
-- **Multi-tenant Kubernetes platform on Azure (AKS):** built over 10 phases with Terraform; onboarding a new customer is a 1-line change that provisions an isolated namespace, PostgreSQL database, TLS ingress, daily backups, network policies, and alerts.
+- **Multi-tenant Kubernetes platform on Azure (AKS):** built over 10 phases with Terraform; onboarding a new customer is a 1-line change that provisions an isolated namespace, PostgreSQL database, TLS ingress, daily backups, network policies, and alerts. [Case study →](HomeLab/Case-Study---Multi-Tenant-AKS-Platform)
 - **Raspberry Pi K3s cluster:** 3 nodes run through GitOps with Flux; 4 real incidents diagnosed and written up as postmortems.
 - **CI/CD pipeline with security gates:** 23 backend tests at 98.55% coverage, end-to-end tests in ephemeral k3d clusters, and Trivy HIGH/CRITICAL findings cut from 20 to zero.
 
