@@ -9,8 +9,8 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Home", slug: "index" as FullSlug },
-  { label: "Blog", slug: "Blog" as FullSlug },
   { label: "Projects", slug: "HomeLab/Projects" as FullSlug },
+  { label: "Blog", slug: "Blog" as FullSlug },
   { label: "About", slug: "HomeLab/About" as FullSlug },
   { label: "Contact", slug: "HomeLab/Contact" as FullSlug },
   { label: "Hire Me", slug: "recruiters" as FullSlug },

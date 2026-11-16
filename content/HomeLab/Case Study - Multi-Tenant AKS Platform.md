@@ -10,6 +10,8 @@ description: "How I built a multi-tenant AKS platform in 10 phases where onboard
 
 [Repository →](https://github.com/bmacharia/kubernetes-platform-engineering) · [[decisions|Decision records →]] · [[HomeLab/Projects|All projects →]]
 
+> **Hiring?** I'm open to DevOps, Platform, and SRE roles. [[recruiters|Start here →]] · [[for/devops-engineer|For DevOps teams →]]
+
 ---
 
 ## 1. The problem
@@ -116,5 +118,7 @@ Running each apply, checking the results, and debugging what broke were mine; th
 To learn how the design carries across clouds, I'm rebuilding the same 10 phases on **AWS (EKS)** and **GCP (GKE)**. The phase-by-phase service mapping is already written, from AKS to EKS and GKE, Blob Storage to S3 and Cloud Storage, and Azure RBAC to IAM, including the Terraform provider changes: [cloud translation guide →](https://github.com/bmacharia/kubernetes-platform-engineering/blob/main/mercury-workflows-sanitized/cloud-translation-aws-gcp.md). In progress; each build will get its own write-up when it's public.
 
 ---
+
+> **Hiring?** I'm open to DevOps, Platform, and SRE roles. [[recruiters|Start here →]] · [[for/devops-engineer|For DevOps teams →]] · [[refer|Referring me? →]]
 
 **Related:** [[Level-Triggered vs Edge-Triggered: What Electrical Engineering Can Teach Us About Kubernetes]] explains the reconciliation model Flux and the CNPG operator rely on.

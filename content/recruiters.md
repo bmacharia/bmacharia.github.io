@@ -8,7 +8,7 @@ description: "Babu Macharia for recruiters: DevOps, Platform, SRE, and Cloud Eng
 
 | | |
 |---|---|
-| **Roles** | DevOps Engineer · Platform Engineer · Site Reliability Engineer · Cloud Engineer |
+| **Roles** | [[for/devops-engineer|DevOps Engineer]] · Platform Engineer · Site Reliability Engineer · Cloud Engineer |
 | **Location** | Tracy, California (San Francisco Bay Area) |
 | **Work arrangement** | Remote anywhere in the U.S., or hybrid in the Bay Area |
 | **Availability** | Open to new roles now |
@@ -28,3 +28,4 @@ Details and links: [Projects](HomeLab/Projects)
 - **Email:** [babu.macharia@protonmail.com](mailto:babu.macharia@protonmail.com) (résumé available on request)
 - **LinkedIn:** [linkedin.com/in/babu-macharia](https://www.linkedin.com/in/babu-macharia/)
 - **GitHub:** [github.com/bmacharia](https://github.com/bmacharia)
+- **Referring me?** [[refer|Here's a blurb you can paste]]
