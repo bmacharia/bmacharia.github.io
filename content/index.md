@@ -6,7 +6,7 @@ description: "Babu Macharia, DevOps and Platform Engineer and U.S. Navy veteran.
 
 **DevOps & Platform Engineer · U.S. Navy Veteran · Kubernetes · Terraform · GitOps**
 
-I build and operate Kubernetes platforms end to end: infrastructure as code, GitOps delivery, CI/CD with security gates, and the observability to know when something breaks. I'm open to remote DevOps, Platform, and Site Reliability Engineer roles in the U.S., and hybrid roles in the San Francisco Bay Area.
+I build and operate Kubernetes platforms end to end: infrastructure as code, GitOps delivery, CI/CD with security gates, and the observability to know when something breaks. I'm open to remote [DevOps](for/devops-engineer), Platform, and Site Reliability Engineer roles in the U.S., and hybrid roles in the San Francisco Bay Area.
 
 **[Hiring? Start here →](recruiters)** · [LinkedIn](https://www.linkedin.com/in/babu-macharia/) · [GitHub](https://github.com/bmacharia) · [Email](mailto:babu.macharia@protonmail.com)
 
