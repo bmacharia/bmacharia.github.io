@@ -1,7 +1,10 @@
 ---
-title: Blog
+title: "Built, Broken, Fixed: A DevOps Journal"
 publish: true
+description: "Built, Broken, Fixed: Babu Macharia's DevOps journal. Write-ups of what I built, what broke, and how I fixed it, across CI/CD, Kubernetes, GitOps, and cloud infrastructure."
 ---
+
+Write-ups of what I built, what broke, and how I fixed it.
 
 ## CI/CD
 - [Automatic Versioning](/CI-CD/Automatic-Versioning)
